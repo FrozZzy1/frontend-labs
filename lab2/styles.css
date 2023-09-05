@@ -1,0 +1,30 @@
+body {
+    background: #ffc472;
+}
+
+div.wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.photo img {
+    padding: 15px;
+    background: #ffd93f;
+    margin-bottom: -20px;
+    width: 400px;
+    height: 400px;
+}
+
+.text {
+    margin-top: 30px;
+    font-size: 30px;
+    color: blueviolet;
+}
+
+.link {
+    color: black;
+}
+
+.photo:first-child {  margin-right: 100px }
