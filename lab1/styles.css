@@ -1,0 +1,23 @@
+.thumb_top img {
+    border: 2px solid #55c5e9;
+    padding: 5px;
+    background: black;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.thumb_middle img {
+    border: 20px solid #14c5e9;
+    padding: 5px;
+    background: darkolivegreen;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.thumb_bot img {
+    border: 5px solid #29c5e9;
+    padding: 10px;
+    background: darkblue;
+    margin-right: 19px;
+    margin-bottom: 10px;
+}
