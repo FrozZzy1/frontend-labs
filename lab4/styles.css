@@ -1,0 +1,74 @@
+body {
+    background: #decaad;
+}
+
+.index_wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.pages_wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.text {
+    color: brown;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.title {
+    color: red;
+    text-align: center;
+}
+
+.organizations {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.image img {
+    width: 400px;
+    height: 400px;
+}
+.pages_image img {
+    padding: 15px;
+    background: #e3cd55;
+    margin-top: 50px;
+    width: 400px;
+    height: 400px;
+}
+
+.button1 {
+    color: brown;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    left: 850px;
+    top: 650px;
+}
+
+.button2 {
+    color: brown;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    left: 760px;
+    top: 800px;
+}
+
+.button3 {
+    color: brown;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    left: 820px;
+    top: 650px;
+}
