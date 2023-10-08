@@ -1,0 +1,112 @@
+@import "reset.css";
+
+body {
+    background-color: black;
+    line-height: 1.2;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+h2 {
+    color: #b20000;
+    font-size: 40px;
+    margin-top: 8px;
+}
+
+p {
+    text-align: center;
+}
+
+.base-header {
+    padding: 12px 0;
+    background-color: rgb(37, 37, 37);
+    border-bottom: 4px solid rgba(2, 1, 1, 0.79);
+}
+
+.base-header__inner {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.base-header__menu-item {
+    height: 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.base-header__menu {
+    margin-top: 16px;
+}
+
+.base-header__menu-item:not(:last-child) {
+    margin-right: 12px;
+}
+
+.base-header__main {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 36px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    margin-bottom: 36px;
+}
+
+.section-item {
+    display: flex;
+}
+
+.text {
+    margin: 12px 0;
+    color: white;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.page-section {
+    margin: 36px auto;
+    max-width: 1440px;
+    width: fit-content;
+    display: flex;
+}
+
+.page-section__item {
+    margin: 0 64px;
+    width: 300px;
+}
+
+.base-header__button {
+    width: 150px;
+    height: 30px;
+    color: #ffffff;
+    background: #2f2f2f;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.button {
+    width: 220px;
+    height: 50px;
+    color: #ffffff;
+    background: #2f2f2f;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
