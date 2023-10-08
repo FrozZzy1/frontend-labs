@@ -1,0 +1,52 @@
+body {
+    background: url(images/planet.jpg);
+    background-position: center center;
+    background-size: 1920px 1450px;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.name {
+    margin: 0;
+    text-align: center;
+    font-size: 128px;
+    color: #fff;
+    padding-top: 100px;
+}
+
+.back {
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.title {
+    padding-top: 150px;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.gallery img {
+    width: 300px;
+    height: 300px;
+    padding-bottom: 75px;
+}
