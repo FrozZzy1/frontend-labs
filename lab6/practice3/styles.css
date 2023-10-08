@@ -1,0 +1,61 @@
+body {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 78px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.predatory {
+    width: 50%;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.item {
+    margin-top: 50px;
+    width: 90%;
+}
+
+.image {
+    width: 400px;
+    height: 200px;
+}
+
+.text-left {
+    background-color: #ffd92c;
+    font-size: 16px;
+    color: #000000;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.text-right {
+    background-color: #c46f00;
+    font-size: 16px;
+    color: #000000;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.herbivores {
+    width: 50%;
+}
+
+.subtitle {
+    font-size: 36px;
+    color: #7e7e7e;
+}
