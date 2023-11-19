@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Факториал</title>
+</head>
+<body>
+<script>
+    function factorial(number) {
+        if (number < 0) {
+            return "Введите положительное число";
+        }
+
+        let result = 1;
+        for (let i = 2; i <= number; i++) {
+            result *= i;
+        }
+
+        return result;
+    }
+
+    const userNumber = prompt("Введите положительное число для вычисления факториала: ");
+    const number = parseInt(userNumber);
+
+    const result = factorial(number);
+    console.log(result);
+</script>
+</body>
+</html>

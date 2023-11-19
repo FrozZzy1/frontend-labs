@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Расписание на неделю</title>
+</head>
+<body>
+    <script>
+        const schedule = [
+            { day: "понедельник", breakfast: "овсянка", destination: "колледж" },
+            { day: "вторник", breakfast: "яичница", destination: "колледж" },
+            { day: "среда", breakfast: "тосты", destination: "колледж" },
+            { day: "четверг", breakfast: "фрукты", destination: "колледж" },
+            { day: "пятница", breakfast: "блины", destination: "колледж" },
+            { day: "суббота", breakfast: "круассаны", destination: "театр" },
+            { day: "воскресенье", breakfast: "каши", destination: "кино" }
+        ]
+
+        const currentDay = prompt("Введите текущий день недели:").toLowerCase();
+
+        let breakfast;
+        let destination;
+
+        for (let i = 0; i < schedule.length; i++) {
+            if (schedule[i].day === currentDay) {
+                breakfast = schedule[i].breakfast;
+                destination = schedule[i].destination;
+                break;
+            }
+        }
+
+        if (breakfast && destination) {
+            alert(`Сегодня завтрак: ${breakfast}, после чего вы пойдете в ${destination}.`);
+
+            switch (destination) {
+                case "колледж":
+                    window.open("https://google.com", "_blank");
+                    break;
+                case "театр":
+                    window.open("https://google.com", "_blank");
+                    break;
+                case "кино":
+                    window.open("https://google.com", "_blank");
+                    break;
+            }
+        } else {
+            alert("Введен некорректный день недели.");
+        }
+    </script>
+</body>
+</html>

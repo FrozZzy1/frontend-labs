@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>что-то про кошек</title>
+</head>
+<body>
+<script>
+    const name = prompt("Как вас зовут?");
+
+    alert("Привет, " + name);
+    document.write("Привет, " + name + "<br>");
+
+    const cats = [
+        {name: "Мурка", price: 500, food: "рыба"},
+        {name: "Барсик", price: 700, food: "мясо"},
+        {name: "Васька", price: 600, food: "консервы"},
+        {name: "Том", price: 550, food: "тушенка"}
+    ];
+
+    const dogs = [
+        {name: "Бобик", price: 1000, food: "кости"},
+        {name: "Шарик", price: 1200, food: "мясо"},
+        {name: "Рекс", price: 900, food: "сухой корм"},
+        {name: "Лайка", price: 1100, food: "консервы"}
+    ];
+
+    const chooseAnimal = confirm("Кошки или собаки?");
+
+    if (chooseAnimal) {
+        let catNames = "";
+        for (let i = 0; i < cats.length; i++) {
+            catNames += `${i + 1}. ${cats[i].name}\n`;
+        }
+        let catIndex = prompt(`Выберите кошку по номеру (1-${cats.length}):\n${catNames}`);
+        catIndex = parseInt(catIndex) - 1;
+
+        document.write(`Выбрана кошка по имени ${cats[catIndex].name} <br>`);
+        document.write(`Стоимость: ${cats[catIndex].price} рублей <br>`);
+        document.write(`Любимая еда: ${cats[catIndex].food}`);
+    } else {
+        let dogNames = "";
+        for (let i = 0; i < dogs.length; i++) {
+            dogNames += `${i + 1}. ${dogs[i].name}\n`;
+        }
+
+        let dogIndex = prompt(`Выберите собаку по номеру (1-${dogs.length}):\n${dogNames}`);
+        dogIndex = parseInt(dogIndex) - 1;
+
+        document.write(`Выбрана собака по имени ${dogs[dogIndex].name} <br>`);
+        document.write(`Стоимость: ${dogs[dogIndex].price} рублей <br>`);
+        document.write(`Любимая еда: ${dogs[dogIndex].food}`);
+    }
+</script>
+</body>
+</html>

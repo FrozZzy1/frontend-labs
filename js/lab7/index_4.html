@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Дни</title>
+</head>
+<body>
+    <script>
+        const inputDate = prompt("Введите дату в формате ГГГГ-ММ-ДД: ");
+        const enteredDateObject = new Date(inputDate);
+        const currentDate = new Date();
+        const timeDifferenceInMilliseconds = currentDate - enteredDateObject;
+        const daysPassed = Math.floor(timeDifferenceInMilliseconds / (1000 * 60 * 60 * 24));
+        alert(`Прошло ${daysPassed} дней с введенной даты`);
+    </script>
+</body>
+</html>

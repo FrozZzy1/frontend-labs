@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Определение</title>
+</head>
+<body>
+    <script>
+        const cats = ["Мурка", "Барсик", "Васька", "Том", "Кисуня", "Матроскин", "Черныш", "Лисичка"];
+        const dogs = ["Шарик", "Тузик", "Рекс", "Белка", "Стрелка", "Бим", "Дружок", "Бобик"];
+        const name = prompt("Введите ваше имя: ");
+        switch (true) {
+            case cats.includes(name):
+                alert("Похоже, вы - кошка!");
+                window.open("https://google.com", "_blank");
+                break;
+            case dogs.includes(name):
+                alert("Похоже, вы - собака!");
+                window.open("https://google.com", "_blank");
+                break;
+            default:
+                alert("Похоже, вы - человек!");
+                window.open("https://google.com", "_blank");
+                break;
+        }
+    </script>
+</body>
+</html>
